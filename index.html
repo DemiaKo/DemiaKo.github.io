@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курінь ч. 11 ім. Івана Сірка | Пласт</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="fleur-de-lis">⚜️</span> Курінь ч. 11
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#history">Наша історія</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay">
+                <h1>Курінь ч. 11 ім. Івана Сірка</h1>
+                <p>Сильно! Красно! Обережно! Бистро!</p>
+                <a href="#contacts" class="btn btn-primary">Зголоситися до куреня</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Про нас</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Ми — частина великої пластової родини. Наш курінь виховує юнаків у дусі традицій українського козацтва та пластового закону.</p>
+                        <p>Наші основні активності:</p>
+                        <ul class="activities-list">
+                            <li>⛺ Табори та мандрівки Карпатами</li>
+                            <li>🔥 Ватри та співи</li>
+                            <li>🚣 Сплави річками України</li>
+                            <li>🤝 Волонтерство та допомога громаді</li>
+                        </ul>
+                    </div>
+                    <div class="about-images">
+                        <div class="placeholder-img" style="background-color: #ddd;">Фото діяльності 1</div>
+                        <div class="placeholder-img" style="background-color: #ccc;">Фото діяльності 2</div>
+                    </div>
+                </div>
+                
+                <h3>Структура куреня (Гуртки)</h3>
+                <table class="scout-table">
+                    <thead>
+                        <tr>
+                            <th>Назва гуртка</th>
+                            <th>Кількість юнаків</th>
+                            <th>Спеціалізація</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Вовки</td>
+                            <td>8</td>
+                            <td>Мандрівництво</td>
+                        </tr>
+                        <tr>
+                            <td>Орли</td>
+                            <td>7</td>
+                            <td>Таборництво</td>
+                        </tr>
+                        <tr>
+                            <td>Лиси</td>
+                            <td>6</td>
+                            <td>Мистецтво</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="history" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Наша історія</h2>
+                <article class="history-card">
+                    <h3>Патрон куреня — Іван Сірко</h3>
+                    <p>Іван Сірко — кошовий отаман Запорозької Січі й усього Війська Запорозького Низового. Здобув перемогу в 65 боях. Герой багатьох українських пісень і казок.</p>
+                    <details>
+                        <summary>Читати більше про патрона</summary>
+                        <p>Саме його незламний дух та хист до військової справи надихають нас бути кращими кожного дня. Курінь носить його ім'я з гордістю.</p>
+                    </details>
+                </article>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">Історичне фото 1</div>
+                    <div class="gallery-item">Історичне фото 2</div>
+                    <div class="gallery-item">Історичне фото 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Контакти</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p><strong>Локація:</strong> м. Львів, вул. Шептицьких 16 (Пластова домівка)</p>
+                        <p><strong>Email:</strong> kurin11@plast.org.ua</p>
+                        <p><strong>Телефон:</strong> +380 00 000 00 00</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Повідомлення:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Хочу долучитися..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Курінь ч. 11 ім. Івана Сірка. Всі права застережено.</p>
+            <p>СКОБ!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
