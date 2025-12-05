@@ -1,0 +1,93 @@
+:root {
+    --plast-green: #2E5A27;
+    --plast-yellow: #F4C430;
+    --dark-text: #333;
+    --light-bg: #f4f4f4;
+    --white: #ffffff;
+    --insta-color: #E1306C;
+    --fb-color: #1877F2;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--dark-text); display: flex; flex-direction: column; min-height: 100vh; }
+main { flex: 1; } /* Притискає футер до низу */
+
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* Header */
+.site-header { background-color: var(--white); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: fixed; width: 100%; z-index: 1000; top: 0; }
+.header-content { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+.logo { font-size: 1.2rem; font-weight: bold; color: var(--plast-green); }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--dark-text); font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--plast-green); border-bottom: 2px solid var(--plast-yellow); }
+
+/* Page Content Padding (Для сторінок без великого фото) */
+.page-content { padding-top: 80px; }
+
+/* Hero Section (Тільки для Головної) */
+.hero-section {
+    background-image: url('hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+.hero-overlay { background: rgba(0, 0, 0, 0.5); padding: 40px; border-radius: 10px; }
+.hero-overlay h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero-overlay p { font-size: 1.5rem; margin-bottom: 30px; }
+
+/* General Sections */
+.section-padding { padding: 60px 0; }
+.section-title { text-align: center; margin-bottom: 40px; color: var(--plast-green); }
+.bg-light { background-color: var(--light-bg); }
+
+/* About Page */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+.about-images { display: flex; gap: 10px; }
+.placeholder-img { flex: 1; height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; border-radius: 5px; }
+.scout-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.scout-table th, .scout-table td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+.scout-table th { background-color: var(--plast-green); color: var(--white); }
+
+/* History Page */
+.history-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 30px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.gallery-item { height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; border-radius: 5px; }
+
+/* Contacts Page */
+.contact-center { text-align: center; }
+.contact-info-box { max-width: 600px; margin: 0 auto; background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.info-item { margin-bottom: 30px; }
+.info-item h3 { color: var(--plast-green); margin-bottom: 10px; }
+
+/* Social Buttons */
+.social-buttons { display: flex; gap: 15px; justify-content: center; margin-top: 15px; }
+.social-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.social-btn:hover { transform: translateY(-3px); opacity: 0.9; }
+.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.facebook { background-color: var(--fb-color); }
+.btn-primary { background-color: var(--plast-green); padding: 10px 25px; border-radius: 5px; text-decoration: none; color: white; display: inline-block; }
+
+/* Footer */
+.site-footer { background-color: #222; color: var(--white); text-align: center; padding: 20px 0; margin-top: auto; }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .hero-overlay h1 { font-size: 2rem; }
+}
